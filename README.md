@@ -1,86 +1,203 @@
-### LearnHub — Student Learning Dashboard
-A responsive student learning dashboard built with ReactJS and Bootstrap  as part of CSCI390 Web Programming — Project Phase 2.
+# LearnHub — Student Learning Dashboard
 
-Project Description:
-LearnHub is a frontend web application that allows students to manage their academic life from one place. It includes a home dashboard, courses listing with search, a weekly schedule, a contact form, and a login page. The project is fully responsive and works on desktop, tablet, and mobile screens.
+A responsive student learning dashboard built with **ReactJS** and **Bootstrap** as part of **CSCI390 Web Programming — Project Phase 2**.
 
-Features:
-Home Dashboard — Welcome banner, stat cards (Total Courses, Assignments Due, Grade Average, Messages), and a preview of enrolled courses
-Courses Page — All 6 courses displayed with a live search/filter using React useState and filter()
-Schedule Page — Weekly timetable with color-coded class slots and a search filter that dims non-matching slots
-Contact Page — Contact form with full validation (name, email, subject, message) and a Get in Touch info panel
-Login Page — Student login with username/password validation, show/hide password toggle, and redirect on success
+---
 
- Technologies Used:
- ReactJS: Frontend library — components, useState, routing
- React Router DOM: Page navigation with Link, Routes, Route
- Bootstrap:Responsive grid and UI components
- CSS: Custom styling — Flexbox, variables, hover effects
+## Project Overview
 
+LearnHub is a frontend web application that helps students manage their academic activities from one centralized dashboard.
 
+The application provides:
 
-project structure:
+* A dashboard overview with academic statistics
+* A courses page with real-time search functionality
+* A weekly class schedule
+* A contact page with form validation
+* A student login system
 
- src/
- App.js                   Main app with routing
- index.js                 Entry point with BrowserRouter
- components/
-    Navbar.js            Navigation bar with Link
-    StatCard.js          Reusable stat card component
-    CourseCard.js        Reusable course card with modal
-    coursesData.js       All courses data array
-pages/
-    Home.js              Dashboard page
-    Courses.js           Courses page with search
-    Schedule.js          Weekly schedule page
-    Contact.js           Contact form page
-    Login.js             Login page
- styles/
-     style.css            All custom styles
+The interface is fully responsive and optimized for desktop, tablet, and mobile devices.
 
+---
 
-     Setup Instructions:
-     -Node.js installed
-     -npm installed
+## Features
 
-     steps:
+### Dashboard
 
-     git clone https://github.com/khodrabbass/studentdashboard.git
+* Welcome banner
+* Academic statistics cards
 
-     cd studentdashboard
+  * Total Courses
+  * Assignments Due
+  * Grade Average
+  * Messages
+* Preview of enrolled courses
 
-     npm install
+### Courses Page
 
-     
-    ### `npm start`
+* Display of all available courses
+* Real-time search functionality using React `useState`
+* Dynamic filtering with JavaScript `filter()`
 
-    Runs the app in the development mode.\
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Schedule Page
 
-    The page will reload when you make changes.\
-    You may also see any lint errors in the console.
+* Weekly timetable layout
+* Color-coded course sessions
+* Search functionality
+* Non-matching schedule items are visually dimmed
 
-    login credentials:
-    username :khodr
-    password:1234
+### Contact Page
 
+* Contact form with validation
+* Name validation
+* Email validation
+* Subject validation
+* Message validation
+* "Get in Touch" information panel
 
-   ## Screenshots
+### Login Page
+
+* Username and password authentication
+* Form validation
+* Show/Hide password toggle
+* Redirect upon successful login
+
+---
+
+## Technologies Used
+
+* **ReactJS** – Component-based frontend development
+* **React Router DOM** – Client-side routing and navigation
+* **Bootstrap 5** – Responsive layouts and UI components
+* **CSS3** – Custom styling, Flexbox, hover effects, and responsive design
+* **JavaScript (ES6+)** – Application logic and interactivity
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── App.js
+├── index.js
+│
+├── components/
+│   ├── Navbar.js
+│   ├── StatCard.js
+│   ├── CourseCard.js
+│   └── coursesData.js
+│
+├── pages/
+│   ├── Home.js
+│   ├── Courses.js
+│   ├── Schedule.js
+│   ├── Contact.js
+│   └── Login.js
+│
+└── styles/
+    └── style.css
+```
+
+### Components
+
+| File           | Description                     |
+| -------------- | ------------------------------- |
+| Navbar.js      | Navigation bar component        |
+| StatCard.js    | Reusable statistics card        |
+| CourseCard.js  | Reusable course card with modal |
+| coursesData.js | Course data source              |
+
+### Pages
+
+| File        | Description              |
+| ----------- | ------------------------ |
+| Home.js     | Dashboard page           |
+| Courses.js  | Courses page with search |
+| Schedule.js | Weekly schedule page     |
+| Contact.js  | Contact form page        |
+| Login.js    | Login page               |
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+
+Make sure you have installed:
+
+* Node.js
+* npm
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/khodrabbass/studentdashboard.git
+```
+
+### Navigate to the Project Folder
+
+```bash
+cd studentdashboard
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+The application will automatically reload whenever changes are made.
+
+---
+
+## Demo Login Credentials
+
+```text
+Username: khodr
+Password: 1234
+```
+
+---
+
+## Screenshots
 
 ### Homepage
+
 ![Homepage](images/Homepage.png)
 
-### Loginpage
-![Loginpage](images/Loginpage.png)
+### Login Page
 
-### Coursespage
-![Coursepage](images/Coursespage.png)
+![Login Page](images/Loginpage.png)
 
-### Schedulepage
-![Schedulepage](images/Shedulepage.png)
+### Courses Page
 
-### Contactpage
-![Contactpage](images/Contactpage.png)
+![Courses Page](images/Coursespage.png)
 
+### Schedule Page
 
+![Schedule Page](images/Shedulepage.png)
 
+### Contact Page
+
+![Contact Page](images/Contactpage.png)
+
+---
+
+## Author
+
+**Khodr Abbass**
+
+CSCI390 Web Programming — Project Phase 2
