@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+
 
 const VALID_USERNAME = 'khodr';
 const VALID_PASSWORD = '1234';
@@ -74,9 +75,13 @@ function Login() {
             <hr className="my-4" />
             <p className="text-center text-muted mb-0" style={{ fontSize: '.85rem' }}>
               Don't have an account?{' '}
-              <a href="javascript:void(0)" className="fw-bold text-decoration-none" style={{ color: 'var(--primary)' }}>
+              <Link
+                to="/signup"
+                className="fw-bold text-decoration-none"
+                style={{ color: 'var(--primary)' }}
+              >
                 Sign up free
-              </a>
+              </Link>
             </p>
           </div>
         </div>
